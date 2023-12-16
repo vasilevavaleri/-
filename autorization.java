@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Предполагается, что у вас есть список зарегистрированных пользователей/администраторов
         String[] users = {"admin:admin123", "user:user123"};
         
         Scanner scanner = new Scanner(System.in);
@@ -25,10 +24,8 @@ public class Main {
         
         if (isAdmin) {
             System.out.println("Добро пожаловать, администратор " + login);
-            // Здесь можно добавить логику для администратора
-        } else {
+            } else {
             System.out.println("Добро пожаловать, пользователь " + login);
-            // Здесь можно добавить логику для пользователя
         }
     }
 }
